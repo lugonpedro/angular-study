@@ -1,9 +1,9 @@
-<mat-card>
+<mat-card class="mat-elevation-z8">
   <mat-toolbar>Cursos</mat-toolbar>
 
   <mat-card-content>
     <div *ngIf="courses$ | async as courses; else loading">
-      <table mat-table [dataSource]="courses" class="mat-elevation-z8">
+      <table mat-table [dataSource]="courses">
         <ng-container matColumnDef="name">
           <th mat-header-cell *matHeaderCellDef>Nome</th>
           <td mat-cell *matCellDef="let element">{{ element.name }}</td>
