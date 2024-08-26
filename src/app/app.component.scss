@@ -1,3 +1,10 @@
-.mat-toolbar {
-  background-color: olivedrab;
+mat-toolbar {
+  color: #ededed;
+  background: black;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
 }
