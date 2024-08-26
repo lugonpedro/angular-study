@@ -1,6 +1,7 @@
 import { CommonModule } from "@angular/common";
 import { Component, OnInit } from "@angular/core";
 import { MatDialog } from "@angular/material/dialog";
+import { MatIconModule } from "@angular/material/icon";
 import { MatTableModule } from "@angular/material/table";
 import { Observable, catchError, of } from "rxjs";
 import { ErrorDialogComponent } from "../../@shared/components/error-dialog/error-dialog.component";
@@ -12,7 +13,13 @@ import { CoursesService } from "../services/courses.service";
 @Component({
   selector: "app-courses",
   standalone: true,
-  imports: [CommonModule, MatTableModule, SharedModule, MaterialModule],
+  imports: [
+    CommonModule,
+    SharedModule,
+    MaterialModule,
+    MatTableModule,
+    MatIconModule,
+  ],
   templateUrl: "./courses.component.html",
   styleUrl: "./courses.component.scss",
 })
