@@ -3,7 +3,6 @@ package com.lugon.spring.controllers;
 import com.lugon.spring.models.Course;
 import com.lugon.spring.repositories.CourseRepository;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
